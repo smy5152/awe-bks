@@ -5,8 +5,6 @@
 
 > Creating an Awesome Books Page
 
-![screenshot](./Images/Screenshots/preview1.png)
-
 First project from template
 
 
