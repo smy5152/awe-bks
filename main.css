@@ -81,10 +81,8 @@ footer {
   border: 2px solid black;
   height: 1.8rem;
   text-align: center;
-  padding-top: 5px;
-
   position: fixed;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 0 10px;
   bottom: 0;
   width: 90%;
 }
@@ -93,7 +91,10 @@ footer {
   color: rgb(45, 54, 185);
 }
 
-.main-nav a, a:hover, a:focus, a:active {
+.main-nav a,
+a:hover,
+a:focus,
+a:active {
   list-style: none;
   text-decoration: none;
 }
