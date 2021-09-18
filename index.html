@@ -10,23 +10,64 @@
 </head>
 
 <body>
-    <h1 class="main-heading-text">Awesome Books </h1>
+    <nav class="main-nav">
+      <p> Awesome Books </p>
+      <ul class="nav-list-buttons">  
+        <li class="individual-list-buttons">
+          <a href="#" id="list-nav-text">
+          <p> List </p> 
+          </a>
+        </li>
+        <li class="individual-list-buttons"> 
+          <a href="#" id="add-new-nav-text">
+          <p> Add new </p> 
+          </a>
+        </li>
+        
+        <li class="individual-list-buttons-last">
+          <a href="#" id="contact-nav-text">
+          <p> Contact </p>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div class="book-list">
-      <ul id="book-list"></ul>
-      <div id="input-form" class="input-form">
-        <h2 class="main-heading-text"> Add a new book </h2>
-        <section class="input-section">
-          <input type="text" name="title" id="book-title" placeholder="title" class="text-input"> <br>
-          <input type="text" name="author" id="book-author" placeholder="author" class="text-input">
-          <button id="add-button" class="add-button">Add</button>
-        </section>
-      </div>
+      <div class="data time-display" id="currentTime"></div>
+      <section id="list-section">
+        <h1 class="main-heading-text">Awesome Books </h1>
+        <ul id="book-list"></ul>
+      </section>
+
+      <section id="add-new-section">
+        <div id="input-form" class="input-form">
+          <h2 class="main-heading-text"> Add a new book </h2>
+          <section class="input-section">
+            <input type="text" name="title" id="book-title" placeholder="title" class="text-input"> <br>
+            <input type="text" name="author" id="book-author" placeholder="author" class="text-input">
+            <button id="add-button" class="add-button">Add</button>
+          </section>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact-section">
+        <h2> Conatct Information </h2>
+        <p> Do you have any questions or just want to say "hello" to us! </p>
+        <p> You can reach out to us at: </p>
+        <ul>
+          <li>E - mail: test@gmail.com</li>
+          <li> Our phone number: +897 xxx xxxx</li>
+          <li> Our streetaddress is 12345, Random street, Miscellanous City, Country name! </li>
+        </ul>
+      </section>
     </div>
+    <footer>
+      Copyright...... Alick Nyirenda & Shabbir Yamani 
+    </footer>
   
   
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.js" integrity="sha512-dnGGSoHcLej84Nu756Hffi8rrR2x8XHY/uv+X0MHr7Kz2LXG9WWvleK9pn2tDGzdz4KEnttgrcLiQUG35yv9eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 </body>
 
