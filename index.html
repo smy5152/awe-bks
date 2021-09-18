@@ -10,18 +10,51 @@
 </head>
 
 <body>
-    <h1 class="main-heading-text">Awesome Books </h1>
+    <nav class="main-nav">
+      <p> Awesome Books </p>
+      <ul class="nav-list-buttons">  
+        <li id="list-nav-text" class="individual-list-buttons"> 
+          <p> List </p> 
+        </li>
+        <li id="add-new-nav-text" class="individual-list-buttons"> 
+          <p> Add new </p> 
+        </li>
+        <li id="contact-nav-text" class="individual-list-buttons-last">
+          <p> Contact </p>
+        </li>
+      </ul>
+    </nav>
     <div class="book-list">
-      <ul id="book-list"></ul>
-      <div id="input-form" class="input-form">
-        <h2 class="main-heading-text"> Add a new book </h2>
-        <section class="input-section">
-          <input type="text" name="title" id="book-title" placeholder="title" class="text-input"> <br>
-          <input type="text" name="author" id="book-author" placeholder="author" class="text-input">
-          <button id="add-button" class="add-button">Add</button>
-        </section>
-      </div>
+      <section id="list-section">
+        <h1 class="main-heading-text">Awesome Books </h1>
+        <ul id="book-list"></ul>
+      </section>
+
+      <section id="add-new-section">
+        <div id="input-form" class="input-form">
+          <h2 class="main-heading-text"> Add a new book </h2>
+          <section class="input-section">
+            <input type="text" name="title" id="book-title" placeholder="title" class="text-input"> <br>
+            <input type="text" name="author" id="book-author" placeholder="author" class="text-input">
+            <button id="add-button" class="add-button">Add</button>
+          </section>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact-section">
+        <h2> Conatct Information </h2>
+        <p> Do you have any questions or just want to say "hello" to us! </p>
+        <p> You can reach out to us at: </p>
+        <ul>
+          <li>E - mail: test@gmail.com</li>
+          <li> Our phone number: +897 xxx xxxx</li>
+          <li> Our streetaddress is 12345, Random street, Miscellanous City, Country name! </li>
+        </ul>
+      </section>
     </div>
+    <footer>
+      Copyright...... Alick Nyirenda & Shabbir Yamani 
+    </footer>
   
   
 
