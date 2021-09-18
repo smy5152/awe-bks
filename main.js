@@ -22,11 +22,19 @@ class BookList {
       this.bookListContainer.innerHTML = '<p> No Books Inserted </p>';
     } else {
       this.collection.forEach((item, index) => {
-        this.bookListContainer.innerHTML += `
-          <p>${item.title}</p>
-          <p>${item.author}</p>
-          <button type="button" class="remove-btn" id="${index}">Remove</button>
-          <hr>`;
+        if (index % 2 === 0) {
+          this.bookListContainer.innerHTML += `
+            <li class="single-book-container">
+              <p>"${item.title}" by ${item.author} </p>
+              <button type="button" class="remove-btn" id="${index}">Remove</button>
+            </li>`;
+        } else {
+          this.bookListContainer.innerHTML += `
+          <li class="single-book-container coloured-container">
+            <p>"${item.title}" by ${item.author} </p>
+            <button type="button" class="remove-btn" id="${index}">Remove</button>
+          </li>`;
+        }
       });
     }
   }
