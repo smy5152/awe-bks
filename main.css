@@ -82,4 +82,23 @@ footer {
   height: 1.8rem;
   text-align: center;
   padding-top: 5px;
+
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 90%;
+}
+
+.nav-active-class {
+  color: rgb(45, 54, 185);
+}
+
+.main-nav a, a:hover, a:focus, a:active {
+  list-style: none;
+  text-decoration: none;
+}
+
+.contact-section {
+  margin: 10px auto;
+  width: 500px;
 }

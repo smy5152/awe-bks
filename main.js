@@ -69,20 +69,32 @@ class BookList {
       this.listBooks();
     };
 
-    const listBookNavEventFunction = () => {
+    const listBookNavEventFunction = (event) => {
+      event.preventDefault();
       this.listSection.style.display = 'block';
+      this.listElementNavSelection.classList.add('nav-active-class');
+      this.addBookNavSelection.classList.remove('nav-active-class');
+      this.contactElementNavSelection.classList.remove('nav-active-class');
       this.addNewSection.style.display = 'none';
       this.contactSection.style.display = 'none';
     };
 
-    const addNewBookNavEventFunction = () => {
+    const addNewBookNavEventFunction = (event) => {
+      event.preventDefault();
       this.listSection.style.display = 'none';
+      this.listElementNavSelection.classList.remove('nav-active-class');
+      this.addBookNavSelection.classList.add('nav-active-class');
+      this.contactElementNavSelection.classList.remove('nav-active-class');
       this.addNewSection.style.display = 'block';
       this.contactSection.style.display = 'none';
     };
 
-    const contactSectionNavEventFunction = () => {
+    const contactSectionNavEventFunction = (event) => {
+      event.preventDefault();
       this.listSection.style.display = 'none';
+      this.listElementNavSelection.classList.remove('nav-active-class');
+      this.addBookNavSelection.classList.remove('nav-active-class');
+      this.contactElementNavSelection.classList.add('nav-active-class');
       this.addNewSection.style.display = 'none';
       this.contactSection.style.display = 'block';
     };
@@ -96,6 +108,7 @@ class BookList {
 
   initDisplayFunction = () => {
     this.listSection.style.display = 'block';
+    this.listElementNavSelection.classList.add('nav-active-class');
     this.addNewSection.style.display = 'none';
     this.contactSection.style.display = 'none';
   }
