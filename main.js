@@ -115,3 +115,13 @@ class BookList {
 }
 // eslint-disable-next-line no-unused-vars
 const library = new BookList();
+
+const Time = () => {
+  // eslint-disable-next-line no-undef
+  const luxonTime = luxon.DateTime.now();
+  // eslint-disable-next-line no-undef
+  currentTime.innerHTML = luxonTime.toLocaleString(luxon.DateTime.DATETIME_MED);
+};
+
+// eslint-disable-next-line no-unused-vars
+const myTime = setInterval(Time, 1000);

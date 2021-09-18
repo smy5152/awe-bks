@@ -102,3 +102,8 @@ footer {
   margin: 10px auto;
   width: 500px;
 }
+
+.time-display {
+  margin: 30px 85%;
+  width: 2000px;
+}
